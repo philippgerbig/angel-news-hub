@@ -6,6 +6,8 @@ var express = require('express'),
   //io = require('socket.io').listen(config.socketIOPort);
   io = require('socket.io').listen(server);
 
+io.set('transports', ['xhr-polling']);
+
 app.use("/static", express.static(__dirname + '/static'));
 app.use(express.bodyParser());
 app.use(express.cookieParser());
