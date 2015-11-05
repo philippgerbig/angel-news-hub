@@ -3,7 +3,8 @@ var express = require('express'),
   server = require('http').createServer(app),
   format = require('util').format,
   config = require('./config.js'),
-  io = require('socket.io').listen(config.socketIOPort);
+  //io = require('socket.io').listen(config.socketIOPort);
+  io = require('socket.io').listen(server);
 
 app.use("/static", express.static(__dirname + '/static'));
 app.use(express.bodyParser());
