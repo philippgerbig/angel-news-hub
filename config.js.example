@@ -7,7 +7,11 @@ var config = {
     dbName: "angel-hub", //Database name
   },
   hub: {
-    title: "cccamp15 Angel Hub"
+    title: "cccamp15 Angel Hub",
+    links: {
+      github: "https://github.com/ccchh/angel-news-hub",
+      bugreport: "https://github.com/ccchh/angel-news-hub/issues"
+    }
   },
   angelSystem: {
     hostname: "engelsystem.de",

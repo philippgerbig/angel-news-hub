@@ -21,8 +21,9 @@ io.set('log level', 1);
 
 server.listen(config.port);
 
+// make static string in config available in views
 app.use(function(req, res, next) {
-  res.locals.title = config.hub.title;
+  res.locals.configStrings = config.hub;
   next();
 });
 
