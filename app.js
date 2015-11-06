@@ -21,6 +21,11 @@ io.set('log level', 1);
 
 server.listen(config.port);
 
+app.use(function(req, res, next) {
+  res.locals.title = config.hub.title;
+  next();
+});
+
 require('./modules/routes')(app);
 var models = require('./modules/models');
 var sockets = require('./modules/sockets')(io, models);

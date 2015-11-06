@@ -6,6 +6,9 @@ var config = {
     port: 27017, //Database Port
     dbName: "angel-hub", //Database name
   },
+  hub: {
+    title: "cccamp15 Angel Hub"
+  },
   angelSystem: {
     hostname: "engelsystem.de",
     path: "/30c3/?p=shifts_json_export_all&api_key=",
